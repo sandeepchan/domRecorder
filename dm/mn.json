@@ -1,0 +1,36 @@
+{
+  "title": "mn",
+  "steps": [
+    {
+      "type": "setViewport",
+      "width": 1920,
+      "height": 484,
+      "deviceScaleFactor": 1,
+      "isMobile": false,
+      "hasTouch": false,
+      "isLandscape": false
+    },
+    {
+      "type": "navigate",
+      "url": "http://localhost:3000/",
+      "assertedEvents": [
+        {
+          "type": "navigation",
+          "url": "http://localhost:3000/",
+          "title": "React App"
+        }
+      ]
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "#root > div > div.App > ul > li:nth-child(1)"
+        ]
+      ],
+      "offsetY": 10,
+      "offsetX": 3
+    }
+  ]
+}
